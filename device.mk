@@ -65,6 +65,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sysfs
 
+# Moto Camera 2
+TARGET_MOTCAMERA2 := denali-2
+
+$(call inherit-product, vendor/motorola/MotCamera2/motcamera2.mk)
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0.vendor:64
